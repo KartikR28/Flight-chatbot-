@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-icon">&#9992;</div>
+            <div class="header-text">
+                <h1>Flight Assistant</h1>
+                <span class="status">Online</span>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message ai">
+                <div class="bubble">Hi! I'm your flight assistant. Ask me about available flights, flight details, or travel times to the airport.</div>
+            </div>
+        </div>
+
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="bubble">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <form id="chatForm">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Ask about flights..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" id="sendBtn" aria-label="Send">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
